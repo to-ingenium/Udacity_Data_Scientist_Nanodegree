@@ -1,0 +1,47 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "fastcore"
+version = "1.8.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ce/d0/c49361f37e115a56eaff0bff640c63f4099a9976ab007f43cba02c771e4b/fastcore-1.8.7.tar.gz", hash = "sha256:ff4d976abaf2e298265e675cf8bf504f6ee2ab5fc159f9b4f153c6a5a03f6bf7", size = 76591, upload-time = "2025-07-25T15:57:50.42Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bd/2f/e37fbde84c64468ec72093b0fc822c86ba6c8038a3ea66dddf82c758ae27/fastcore-1.8.7-py3-none-any.whl", hash = "sha256:3d71e9bae64d335dfad9bff58ff8985091e8fbc23651b0b1b8d16fa4895ff42d", size = 79342, upload-time = "2025-07-25T15:57:48.125Z" },
+]
+
+[[package]]
+name = "packaging"
+version = "25.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/d4/1fc4078c65507b51b96ca8f8c3ba19e6a61c8253c72794544580a7b6c24d/packaging-25.0.tar.gz", hash = "sha256:d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f", size = 165727, upload-time = "2025-04-19T11:48:59.673Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl", hash = "sha256:29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484", size = 66469, upload-time = "2025-04-19T11:48:57.875Z" },
+]
+
+[[package]]
+name = "project-2"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "sqlite-minutils" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "sqlite-minutils", specifier = ">=4.0.3" }]
+
+[[package]]
+name = "sqlite-minutils"
+version = "4.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "fastcore" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/39/de/25926f1caafee46ee4a7f617ab624652e6c44ba8b2351399c626b10553d4/sqlite-minutils-4.0.3.tar.gz", hash = "sha256:c3fc6d20f86b2cd0071eaa9e356024ef83aba3ce9d9606e50c4ab255c3279a71", size = 73036, upload-time = "2024-12-01T23:48:18.746Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/85/12/78e39e4734bb8770955a6ec7f5dc1a918d56c8f94a1eaa2c7fb91f2fec2a/sqlite_minutils-4.0.3-py3-none-any.whl", hash = "sha256:33254c37d88b8dfd6218ba0d7c4d64232a2bf234e15b841459c5676dea2b2db0", size = 79288, upload-time = "2024-12-01T23:48:16.776Z" },
+]
